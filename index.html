@@ -3,42 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GG LOOP | The Future of Premium Arbitrage</title>
+    <title>GG LOOP — Tournament Operating System & Esports Monetization</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #050505; color: #fff; font-family: 'Inter', sans-serif; }
-        .neon-text { text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88; color: #00ff88; }
-        .neon-border { border: 1px solid #00ff88; box-shadow: 0 0 10px rgba(0,255,136,0.3); }
-        .glitch-bg {
-            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
-        }
+        body { background-color: #050505; color: #fff; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .neon-text { text-shadow: 0 0 12px #00ff88; color: #00ff88; }
+        .neon-border { border: 1px solid #00ff88; box-shadow: 0 0 15px rgba(0,255,136,0.25); }
+        .card-bg { background: rgba(18, 18, 18, 0.85); backdrop-filter: blur(10px); }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden glitch-bg">
-    <!-- Grid Background overlay -->
-    <div class="absolute inset-0 z-0" style="background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.3;"></div>
-    
-    <div class="z-10 text-center max-w-3xl px-6">
-        <h1 class="text-7xl font-black tracking-tighter mb-4">GG <span class="neon-text">LOOP</span></h1>
-        <p class="text-xl text-gray-400 mb-8 font-light tracking-wide">
-            The infrastructure is currently undergoing a massive Tier-1 upgrade. <br>
-            We are deploying the new autonomous engine. 
+<body class="min-h-screen flex flex-col items-center justify-between relative overflow-x-hidden selection:bg-[#00ff88] selection:text-black">
+    <!-- Grid Overlay -->
+    <div class="fixed inset-0 z-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+    <!-- Navigation Header -->
+    <header class="w-full max-w-6xl mx-auto px-6 py-8 flex justify-between items-center z-10">
+        <div class="flex items-center space-x-3">
+            <span class="text-3xl font-black tracking-tighter">GG <span class="neon-text">LOOP</span></span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-mono uppercase">Live OS</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="https://gg-loop-tournament.vercel.app" target="_blank" class="text-sm font-semibold text-gray-300 hover:text-white transition">Platform Demo</a>
+            <a href="https://buy.stripe.com/4gMcN7bnS8Qhbr57l60Fi00" target="_blank" class="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-[#00ff88] text-black rounded hover:bg-emerald-400 transition">Get Pro ($29/mo)</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="w-full max-w-5xl mx-auto px-6 py-12 z-10 text-center flex-1 flex flex-col justify-center items-center">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gray-900 border border-gray-800 text-xs text-gray-400 mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Zero-COGS Skill Tournaments & B2B Creator Ecosystem</span>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+            Competitive Gaming Powered by <br><span class="neon-text">Verified Skill Economics</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-12 font-light">
+            Automated tournament brackets, anti-cheat telemetry verification, and zero-risk prize pools. Built for DFW venues, collegiate leagues, and competitive creators.
         </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-            <a href="https://www.tiktok.com/@jaysonbq" target="_blank" class="px-8 py-4 bg-white text-black font-bold uppercase tracking-widest rounded-sm hover:bg-gray-200 transition-all">
-                Follow Updates
-            </a>
-            <a href="mailto:jquindao1@icloud.com?subject=GG%20Loop%20Early%20Access" class="px-8 py-4 bg-black text-[#00ff88] neon-border font-bold uppercase tracking-widest rounded-sm hover:bg-[#00ff88] hover:text-black transition-all">
-                Request Early Access
-            </a>
+
+        <!-- Pricing & Activation Rails -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left max-w-5xl">
+            <!-- Tier 1: Founding Member -->
+            <div class="card-bg border border-gray-800 hover:border-emerald-500/50 rounded-xl p-6 transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono uppercase text-gray-500">Player Tier</span>
+                    <h3 class="text-2xl font-bold mt-1 text-white">Founding Member</h3>
+                    <div class="mt-4 mb-6">
+                        <span class="text-4xl font-extrabold text-white">$29</span>
+                        <span class="text-gray-400 text-sm">/ month</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Priority Tournament Seedings</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Automated Cash/Reward Match Payouts</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Verified Anti-Cheat Rating</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Discord VIP Creator Roles</li>
+                    </ul>
+                </div>
+                <a href="https://buy.stripe.com/4gMcN7bnS8Qhbr57l60Fi00" target="_blank" class="w-full py-3 text-center bg-white text-black font-bold text-sm uppercase tracking-wider rounded hover:bg-gray-200 transition">
+                    Activate Pro Membership
+                </a>
+            </div>
+
+            <!-- Tier 2: Grassroots Sponsor (Recommended) -->
+            <div class="card-bg neon-border rounded-xl p-6 transition flex flex-col justify-between relative">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#00ff88] text-black text-[10px] font-black uppercase tracking-widest px-3 py-0.5 rounded-full">
+                    Most Popular
+                </div>
+                <div>
+                    <span class="text-xs font-mono uppercase text-emerald-400">B2B Venue / Brand</span>
+                    <h3 class="text-2xl font-bold mt-1 text-white">Event Sponsorship</h3>
+                    <div class="mt-4 mb-6">
+                        <span class="text-4xl font-extrabold text-white">$500</span>
+                        <span class="text-gray-400 text-sm">/ event</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Title Sponsor Placement on Brackets</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Live Stream Overlay Banner Adverts</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Targeted Gamer Audience Lead Capture</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Social & Broadcast Shoutouts</li>
+                    </ul>
+                </div>
+                <a href="https://buy.stripe.com/dRm5kF77CfeFdzd0WI0Fi02" target="_blank" class="w-full py-3 text-center bg-[#00ff88] text-black font-bold text-sm uppercase tracking-wider rounded hover:bg-emerald-400 transition">
+                    Sponsor Tournament ($500)
+                </a>
+            </div>
+
+            <!-- Tier 3: Premier LAN Activation -->
+            <div class="card-bg border border-gray-800 hover:border-emerald-500/50 rounded-xl p-6 transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono uppercase text-gray-500">Enterprise / Venue</span>
+                    <h3 class="text-2xl font-bold mt-1 text-white">Premier LAN Activation</h3>
+                    <div class="mt-4 mb-6">
+                        <span class="text-4xl font-extrabold text-white">$1,500</span>
+                        <span class="text-gray-400 text-sm">/ activation</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Full Turnkey Bracket & Check-in System</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> On-Site / Virtual Tournament Operator</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> 1080p60 Live Production Broadcast Feed</li>
+                        <li class="flex items-center"><span class="text-[#00ff88] mr-2">✓</span> Sponsor Escrow Payout Distribution</li>
+                    </ul>
+                </div>
+                <a href="https://buy.stripe.com/aFa28t1Ni9Ulan1eNy0Fi01" target="_blank" class="w-full py-3 text-center bg-gray-900 border border-gray-700 text-white font-bold text-sm uppercase tracking-wider rounded hover:bg-gray-800 transition">
+                    Book Premier Activation ($1,500)
+                </a>
+            </div>
         </div>
 
-        <div class="mt-24 border-t border-gray-800 pt-8 flex justify-center space-x-6 text-sm text-gray-500">
-            <span>STATUS: <span class="text-yellow-400 animate-pulse">SYSTEM_UPGRADE</span></span>
-            <span>|</span>
-            <span>NODE: DFW-01</span>
+        <div class="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+            <span>Direct Inquiries: <a href="mailto:jquindao1@icloud.com" class="text-white hover:underline">jquindao1@icloud.com</a></span>
+            <span>•</span>
+            <span>Founder Phone: <a href="tel:4693718556" class="text-white hover:underline">(469) 371-8556</a></span>
+            <span>•</span>
+            <span>Platform Demo: <a href="https://gg-loop-tournament.vercel.app" target="_blank" class="text-emerald-400 hover:underline">Launch Tournament OS</a></span>
         </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-6xl mx-auto px-6 py-8 border-t border-gray-900 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 z-10 gap-4">
+        <div>
+            © 2026 GG LOOP LLC (Texas). All rights reserved. Registered Business Entity.
+        </div>
+        <div class="flex space-x-6">
+            <span>Commercial Banking: Mercury Bank FDIC</span>
+            <span>•</span>
+            <span>Payments Secured by Stripe</span>
+        </div>
+    </footer>
 </body>
 </html>
